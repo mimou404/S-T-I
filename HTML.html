@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>HTML 5</h1><img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-image-logo-html-7.png" width="32.4%" id="im1"><br><br><br><br>
+	<fieldset>
+		<legend>Les balises principaux</legend>
+		<ul> < !--...--> :
+			<li>Pour un commentaire</li>
+		</ul>
+		<ul>< !DOCTYPE > :
+			<li>L'inclusion du DOCTYPE dans un document HTML assure que le navigateur interprétera la version HTML ainsi déclarée.
+            En HTML5 le doctype à déclarer est : < !DOCTYPE html>.</li>
+		</ul>
+		<ul> < a > :
+			<li>Utilisée pour les hyperliens. Attention : l'attribut "name" n'existe plus pour les liens.
+            </li>
+		</ul>
+		<ul>< abbr>:
+			<li>Pour une abréviation. Son attribut "title" ne doit être utilisé que pour l'extension de l'abréviation et rien d'autre.</li>
+		</ul>
+		<ul>< address>:
+			<li>Généralement utilisée dans le conteneur < footer>,
+			cette balise est utilisée à la place de la balise < p>, les informations nécessaires pour contacter la ou les auteurs du document cité. Cela peut-être son nom ou un label suivi de son adresse email par-exemple ou adresse postale. Confusion possible : on utilisera la balise < p> pour donner l'adresse postale d'une entreprise sans relation avec l'auteur du document s'y rapportant.</li>
+		</ul>
+		<ul> < applet>:
+			<li>Non utilisé</li>
+		</ul>
+		<ul>< area>:
+			<li>Définie une zone ou plusieurs zones pour une carte image. Cette balise s'utilise toujours avec la balise < map>.attributs</li>
+		</ul>
+		<ul>< article>:
+			<li>Balise de structure supposant avoir un titre de type < h1>. Cette balise permet de regrouper des informations non essentielles relatives au site Web. Lorsque la balise < aside> se trouve dans un article, son contenu se réfère à l'article lui même et non au site Web (par exemple des notes de pages, un glossaire ou tout élément relatifs à l'article).
+            Confusion : La sidebar d'une page n'a pas pour obligation d'être dans une balise < aside>.</li>
+		</ul>
+		<ul>< audio>:
+			<li>Pour lire un fichier audio</li>
+		</ul>
+		<ul>< b>:
+			<li>Utilisé dans un paragraphe pour une partie de texte en gras, sémantiquement faible, on lui préférera la balise < strong> pour donner de l'importance au texte.</li>
+		</ul>
+		<ul>< base>:
+			<li>	Cette balise permet de définir l'URL de base (l'utilisation de cette balise est parfois controversée).</li>
+		</ul>
+		<ul>< basefont>:
+			<li>Non utilisé . (On peut tout de même encore la trouver dans l'intégration HTML4 de newsletters pour déclarer des polices.)</li>
+		</ul>
+		<ul>< bdo>:
+			<li>Utilisé pour la direction d'un texte. Attention, l'attribut "dir" à une valeur sémantique différente pour cette balise.</li>
+		</ul>
+		<ul>< big>:
+			<li>Non utilisé</li>
+		</ul>
+		<ul>< blockquote>:
+			<li>Pour une longue citation venant d'une source externe, l'adresse de la source peut-être indiquée dans l'attribut "cite". Dans le cas d'un forum de discussion ou d'un blog, un utilisateur peut utiliser cette balise pour citer le commentaire d'un autre utilisateur. Nous n'utiliserons pas cette balise pour un dialogue. Confusion possible avec la balise < q>.</li>
+		</ul>
+		<ul>< body>:
+			<li>Partie principale du document HTML.</li>
+		</ul>
+		<ul>< br>:
+			<li>Utilisée dans un paragraphe, cette balise permet de créer un saut de ligne.</li>
+		</ul>
+		<ul>< button>:
+			<li>Pour un bouton. il peut être utilisé comme commande.</li>
+		</ul>
+		<ul>< canvas>:
+			<li>Pour créer un graphique avec la possibilité de l'animer avec du JavaScript.</li>
+		</ul>
+		<ul>< caption>:
+			<li>Pour le titre d'un tableau. Note : En HTML5, l'attribut "summary" de la balise "table' n'est plus valide et ne doit pas être utilisé.</li>
+		</ul>
+		<ul>< center>:
+			<li>Non utilisé</li>
+		</ul>
+		<ul>< cite>:
+			<li>Utilisée pour le titre d'une oeuvre, d'un document ou d'un évènement. Cette balise peut-être peut-être utilisée conjointement avec la balise < q>. Cette balise ne peut être utilisée pour une personne.</li>
+		</ul>
+		<ul>< code>:
+			<li>Pour déclarer du code informatique. On peut l'utiliser à l'intérieur de la balise <pre> pour du texte pré formaté. On recommande d'utiliser une classe avec le nom du langage informatique cité dans cette balise. On peut ajouter un classe pour décrire le type de langage utilisé dans la balise exemple : < code class="language-javascript">. Confusion possible avec la balise < samp>.</li>
+		</ul>
+		<ul>< col>:
+			<li>Utilisé pour créer des colonnes dans un tableau.</li>
+		</ul>
+		<ul>< colgroup>:
+			<li>Utilisé pour créer des groupes de colonnes dans un tableau.</li>
+		</ul>
+		<ul>< command>:
+			<li>Cette balise est utilisée comme un bouton, un radiobutton, ou un checkbox. Elle ne peut être visible qu'à l'intérieur de la balise < menu>, dans le cas contraire, elle ne sera pas visible et utilisée comme raccourcis clavier. Attention, l'attribut "title" à une valeur sémantique différente pour cette balise.</li>
+		</ul>
+		<ul>< datalist>:
+			<li>Pour une liste déroulante.</li>
+		</ul>
+		<ul>< dd>:
+			<li>Pour la description d'une définition, s'utilise avec la balise < dl>.</li>
+		</ul>
+		<ul>< del>:
+			<li>Utilisé pour indiquer qu'une partie de texte est supprimée, mais conservée pour en garder la trace, on la stylisera en CSS. On peut utiliser cette balise conjointement avec la balise < ins> pour indiquer le nouveau texte qui est à prendre en compte. Confusion possible avec la balise < s>qui indique qu'un texte n'est pas correct ou non pertinent.</li>
+		</ul>
+		<ul>< details>:
+			<li>Pour apporter des détails sur Widget, il peut être utilisé pour cacher/afficher des informations complémentaires. Il peut être le conteneur de la balise < summary>.</li>
+		</ul>
+		<ul>< dfn>:
+			<li>Représente le terme d'une définition, on l'utilise dans un paragraphe ou une liste de définitions. On peut utiliser cette balise conjointement avec < abbr>. Dans la même section, il est possible de créer un lien pointant sur cette définition, utile pour la création d'infobulle par exemple.</li>
+		</ul>
+		<ul>< dir>:
+			<li>Non utilisé</li>
+		</ul>
+		<ul>< div>:
+			<li>Balise sans valeur sémantique réelle, elle sert de conteneur pour une mise en forme en CSS. Cette balise doit être utilisée en dernier recours, lorsqu'aucune autre balise ne peut convenir.</li>
+		</ul>
+		<ul>< dl>:
+			<li>Pour une liste de définitions. Confusion possible : cette balise ne peut être utilisée pour créer des dialogues, les balises <p> restant appropriées.</li>
+		</ul>
+		<ul>< dt>:
+			<li>Pour déclarer une définition, s'utilise avec la balise < dl>.</li>
+		</ul>
+		<ul>< em>:
+			<li>Utilisé dans un paragraphe pour mettre une partie de texte en emphase.</li>
+		</ul>
+		<ul>< embed>:
+			<li>Utilisé pour du contenu externe et interactif ou pour un plug-in.</li>
+		</ul>
+		<ul>< fieldset>:
+			<li>Pour regrouper des éléments d'un formulaire.</li>
+		</ul>
+		<ul>< figcaption>:
+			<li>Utilisée dans le conteneur <figure>, avant ou après le contenu, cette balise permet d'écrire une légende ou une description.</li>
+		</ul>
+		<ul>< figure>:
+			<li>Utilisée pour regrouper un ou plusieurs médias ( illustrations, diagrammes, exemples de code, photos...) attachés au document sans pour autant en suivre le flux. Les images s'y trouvant n'ont pas obligation d'être inséré dans une balise <p> et dans le cas d'une liste d'images, on peut omettre les listes à puce. On utilisera la balise figcaption pour décrire les médias utilisés. Confusion : cette balise ne doit être utilisée dès qu'il y a une image dans un article, on peut aussi la confondre avec la balise < aside>.</li>
+		</ul>
+		<ul>< font>:
+			<li>Non utilisé</li>
+		</ul>
+		<ul>< footer>:
+			<li>Regroupe des informations de bas de page dans une section ou un article. Cette balise permet d'ajouter des liens de navigation sans utilisation de la balise < nav>.</li>
+		</ul>
+		<ul>< form>:
+			<li>Pour un formulaire</li>
+		</ul>
+		<ul>< frame>:
+			<li>Non utilisé</li>
+		</ul>
+		<ul>< frameset>:
+			<li>Non utilisé</li>
+		</ul>
+		<ul>< h1> à < h6>:
+			<li>Utilisés pour la hiérarchisation des titres.</li>
+		</ul>
+		<ul>< head>:
+			<li>Pour les informations d'en tête du document HTML.</li>
+		</ul>
+		<ul>< header>:
+			<li>Pour l'entête d'une section et/ou d'une page, cette balise est utile pour une introduction et/ou des éléments de navigation. Cette balise peut-être utilisée dans la balise < section> et dans la balise < article>.</li>
+		</ul>
+		<ul>< hgroup>:
+			<li>Non utilisé - (Regroupe des titres de niveau Hn dans la balise <head> à noter : cette balise a été supprimée puis réintégrée puis re-supprimée).</li>
+		</ul>
+		<ul>< hr>:
+			<li>Permets de créer une ligne de séparation</li>
+		</ul>
+		<ul>< html>:
+			<li>Déclaration du document HTML. On lui rajoutera l'attribut lang pour déclarer la langue utilisée.</li>
+		</ul>
+		<ul>< i>:
+			<li>Utilisée dans un paragraphe pour indiquer qu'une partie du texte est différent du reste. Il ne faut pas utiliser cette balise lorsque < b>, < cite>,< dfn>,< em>,< q>,< small> ou < strong> peuvent être utilisées. Note : Certains analyseurs de site nous disent que cette balise est obsolète, ce qui est totalement faux.</li>
+		</ul>
+		<ul>< iframe>:
+			<li>Pour créer une sous-fenêtre.</li>
+		</ul>
+		<ul>< img>:
+			<li>Pour déclarer une image</li>
+		</ul>
+		<ul>< input>:
+			<li>Pour un champ de texte.</li>
+		</ul>
+		<ul>< ins>:
+			<li>Pour insérer un nouveau texte dans un document révisé. On peut utiliser cette balise avec <del> qui permet d'indiquer qu'une portion de texte n'est plus valable.</li>
+		</ul>
+		<ul>< keygen>:
+			<li>L'élément keygen représente un contrôle de générateur de clé stockée dans "keystore local".</li>
+		</ul>
+		<ul>< kbd>:
+			<li>Lorsque le texte est utilisé pour définir des actions au clavier.</li>
+		</ul>
+		<ul>< label>:
+			<li>Étiquette utilisée comme titre d'une commande.</li>
+		</ul>
+		<ul>< legend>:
+			<li>Titre du fieldset auquel il se rapporte.</li>
+		</ul>
+		<ul>< li>:
+			<li>Item d'une liste ordonnée ou à puce.</li>
+		</ul>
+		<ul>< link>:
+			<li>Permets de lier une ressource externe à la page HTML. Attention l'attribut "title" à une valeur sémantique différente.</li>
+		</ul>
+		<ul>< main>:
+			<li>Pour déclarer "LE" contenu important d’une page HTML, cette balise ne peut donc être utilisée qu’une fois par page -> ce qui veut dire que le header principal ainsi que le footer principal sont des parties différentes. Les balises < article> , < aside> , < footer> , < header> ou < nav> ne peuvent pas contenir la balise < main>, par contre, on peut mettre ces balises à l'intérieur de < main>, là, il n'y a pas de soucis.</li>
+		</ul>
+		<ul>< map>:
+			<li>Utilisée pour créer une carte d'image avec des zones réactives. L'attribut "name" est obligatoirement requis.</li>
+		</ul>
+		<ul>< mark>:
+			<li>Pour marquer du texte, par exemple surligner un résultat de recherche. On stylisera cette balise en CSS.</li>
+		</ul>
+		<ul>< menu>:
+			<li>Pour une liste de commande. Confusion possible avec la balise < nav>.</li>
+		</ul>
+		<ul>< meta>:
+			<li>Permets d'ajouter des métas à la page HTML.</li>
+		</ul>
+		<ul>< meter>:
+			<li>Pour les mesures.</li>
+		</ul>
+		<ul>< nav>:
+			<li>Pour regrouper des liens qu'ils soient internes à la page ou pour des pages liées. Il est recommandé, mais non obligatoire d'utiliser les listes à puce pour lister les liens.</li>
+		</ul>
+		<ul>< noframes>:
+			<li>Non utilisé</li>
+		</ul>
+		<ul>< noscript>:
+			<li>Utilisée pour indiquer un message dans le cas où JavaScript serait désactivé.</li>
+		</ul>
+		<ul>< object>:
+			<li>Pour déclarer un objet.</li>
+		</ul>
+		<ul>< ol>:
+			<li>Utilisé pour les listes ordonnées.</li>
+		</ul>
+		<ul>< optgroup>:
+			<li>Pour grouper des informations dans une liste déroulante.</li>
+		</ul>
+		<ul>< option>:
+			<li>Pour déclarer un item dans une liste déroulante. Peut-être utilisé comme "commands".</li>
+		</ul>
+		<ul>< output>:
+			<li>Représente le résultat d'un calcul.</li>
+		</ul>
+		<ul>< p>:
+			<li>Définis un paragraphe contenant une ou plusieurs phrases. Cette balise ne doit pas être utilisée si une autre balise est mieux indiquée</li>
+		</ul>
+		<ul>< param>:
+			<li>Pour paramétrer un objet.</li>
+		</ul>
+		<ul>< pre>:
+			<li>Ecrire un texte préformaté. L'utilisation de la balise <p> n'est pas obligatoire. Peut-être lui même le conteneur de la balise < code>.</li>
+		</ul>
+		<ul>< progress>:
+			<li>Pour une barre de progression.</li>
+		</ul>
+		<ul>< q>:
+			<li>Utilisée pour une citation courte provenant d'une ressource externe. Si l'on connait l'URL de la source de la citation, on pourra l'indiquer grâce à l'attribut "cite". Dans tous les autres cas, on utilise les guillemets sans balise spécifique. On peut aussi utiliser la balise < cite> pour citer un auteur. Confusion possible avec la balise < blockquote>.</li>
+		</ul>
+		<ul>< rp>:
+			<li>Utilisé en annotations ruby pour définir ce qui est à montrer aux navigateurs ne supportant les éléments ruby.</li>
+		</ul>
+		<ul>< rt>:
+			<li>Pour expliquer des annotations en Ruby.</li>
+		</ul>
+		<ul>< ruby>:
+			<li>	Utilisé pour des annotations en Ruby.</li>
+		</ul>
+		<ul>< s>:
+			<li>Utilisé pour identifier une partie de texte qui n'est pas correct ou non pertinent. Confusion possible avec la balise < del>qui permet d'indiquer qu'un texte doit être remplacé ou supprimé.</li>
+		</ul>
+		<ul>< samp>:
+			<li>Utilisée dans un paragraphe pour écrire un échantillon de code. Confusion possible avec la balise < code></li>
+		</ul>
+		<ul>< script>:
+			<li>Pour ajouter un script internet ou externe.</li>
+		</ul>
+		<ul>< section>:
+			<li>Utilisée pour regrouper des éléments différents, mais partageant la même thématique Cette balise est le plus souvent utilisé avec un header.</li>
+		</ul>
+		<ul>< select>:
+			<li>Pour une liste déroulante.</li>
+		</ul>
+		<ul>< small>:
+			<li>(Attention la balise a été redéfinie,elle ne sert plus à minimiser un texte).La balise small est utilisée comme contenu relatif mais non essentiel. On utilisera pour déclarer un copyright, des disclaimers, des mises en garde...</li>
+		</ul>
+		<ul>< source>:
+			<li>	Utilisée dans les balises < video> et < audio> pour indiquer l'url et le type des médias.</li>
+		</ul>
+		<ul>< span>:
+			<li>	Utilisée pour mettre en style une portion de texte qui se différencie des autres. Cette balise ne doit pas être utilisée si une autre balise de formatage de texte convient mieux.</li>
+		</ul>
+		<ul>< strike>:
+			<li>Non utilisé, la balise del remplace cette balise.</li>
+		</ul>
+		<ul>< strong>:
+			<li>Utilisé dans un paragraphe pour mettre un texte en gras.</li>
+		</ul>
+		<ul>< style>:
+			<li>Permets de définir un style dans le document HTML. Attention, l'attribut title à une valeur sémantique différente pour cette balise.</li>
+		</ul>
+		<ul>< sub>:
+			<li>	Déclarer un indice : Petit caractère placé en bas et à droite d'un autre caractère.</li>
+		</ul>
+		<ul>< summary>:
+			<li>Généralement utilisé à l'intérieur du conteneur < detail>, il permet de décrire le sommaire, la légende ou le titre d'un élément.</li>
+		</ul>
+		<ul>< sup>:
+			<li>Déclarer un exposant : petit caractère placé en haut et à droite d'un autre caractère.</li>
+		</ul>
+		<ul>< table>:
+			<li>Pour un tableau. Note : En HTML5, l'attribut summary utilisé en accessibilité n'est plus valide et ne doit pas être utilisé : la balise < caption> devient indispensable.</li>
+		</ul>
+		<ul>< tbody>:
+			<li>	Utilisé pour le corps d'un tableau.</li>
+		</ul>
+		<ul>< td>:
+			<li>Pour déclarer une cellule dans un tableau</li>
+		</ul>
+		<ul>< textarea>:
+			<li>Pour a champ de saisi.</li>
+		</ul>
+		<ul>< tfoot>:
+			<li>	Utilisé pour le pied de page d'un tableau.</li>
+		</ul>
+		<ul>< th>:
+			<li>Pour déclarer une cellule dans l'entête d'un tableau.</li>
+		</ul>
+		<ul>< thead>:
+			<li>Utilisé pour l'entête d'un tableau.</li>
+		</ul>
+		<ul>< time>:
+			<li>Pour déclarer une date ou une heure.</li>
+		</ul>
+		<ul>< title>:
+			<li>Pour déclarer une date ou une heure.</li>
+		</ul>
+		<ul>< tr>:
+			<li>Pour déclarer un champ dans un tableau.</li>
+		</ul>
+		<ul>< track>:
+			<li>Barre pour indiquer une portion de temps.</li>
+		</ul>
+		<ul>< tt>:
+			<li>Non utilisé</li>
+		</ul>
+		<ul>< u>:
+			<li>Non utilisé, cette balise créée une confusion avec la balise < a> au niveau des styles</li>
+		</ul>
+		<ul>< ul>:
+			<li>Pour créer une liste à puces.</li>
+		</ul>
+		<ul>< var>:
+			<li>Pour déclarer une variable</li>
+		</ul>
+		<ul>< video>:
+			<li>Pour lire une video.</li>
+		</ul>
+		<ul>< wbr>:
+			<li>Balise non fermante à utiliser à l'intérieur d'un mot long pour forcer un retour à la ligne.</li>
+		</ul>
+		<ul>< xmp>:
+			<li>Non utilisé</li>
+		</ul>
+		
+	</fieldset>
+
+</body>
+<style>
+	body{
+		 background:linear-gradient(91deg,#4A235A,#1A5276);
+	}
+	legend{
+		text-align:  left;
+		font-size: 50px;
+		color: white;
+		font-style: italic;
+
+	}
+	fieldset{
+		width: 10%;
+	    background: rgba(255,255, 255, .12);
+	    border-radius: 60px;
+	    backdrop-filter:blur(10px);
+	    -webkit-backrop-filter: blur(10px);
+	    -moz-backrop-filter: blur(18px);
+	    box-shadow: 28px 20px 40px -6px rgba(0, 0, 0, .2);
+	    border: 3px black ;
+	    margin-left: 9%;
+	}
+	h1{
+		text-align: center;
+		font-weight: bold;
+		font-style: italic;
+		letter-spacing: 3px;
+		font-size: 65px;
+		color:white;
+		color: rgba(255,255, 255, .1);
+	    border-radius: 60px;
+	    backdrop-filter:blur(10px);
+	    -webkit-backrop-filter: blur(10px);
+	    -moz-backrop-filter: blur(18px);
+	    text-shadow: 5px 5px  26px ;
+	     animation-name: examples;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+	}
+	@keyframes examples {
+        from {color: rgba(255,255, 255, .1);  }
+        to {color: rgba(255,255, 255);  }
+    }
+    img{
+		margin-left: 34%;
+	}
+	ul{
+		color: black;
+		font-weight: bold;
+	    font-size: 50px;
+	}
+	li{
+		color: white;
+	    font-size: 30px;
+	    text-align: center;
+	}
+</style>
+</html>
