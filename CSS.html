@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<center><h1>CSS 3</h1></center><img src="https://seeklogo.com/images/C/css3-logo-647BAA43FE-seeklogo.com.png" width="13%" id="im1"><br><br><br><br>
+	<center><fieldset>
+		<legend>Définition</legend>
+		<ul>Définition de ce langage informatique :
+			<li><p>CSS (Cascading Style Sheets ou Feuilles de style en cascade en français) :</p><p>est un langage déclaratif utilisé pour décrire la présentation de pages web dans le navigateur. Le navigateur applique les déclarations de style CSS aux éléments concernés pour les mettre en forme. Une déclaration de style contient des propriétés et leurs valeurs et détermine l'apparence d'un ou plusieurs éléments de la page.
+
+CSS est l'une des trois technologies qui constituent le noyau du web, avec <a href="HTML.html">HTML</a> et JavaScript. Ce langage est principalement utilisé pour appliquer un style aux éléments HTML, mais peut aussi être utilisé avec d'autres langages de balisage tels que SVG ou encore XML.</p></li>
+		</ul>
+	</fieldset></center><br><br><br><br><br>
+	<center><fieldset>
+		<legend>Les balises principaux</legend>
+		<ul>1.Ouvrez votre fichier index.html et copiez la ligne suivante quelque part au sein de l'élément head (c'est-à-dire entre les balises < head> et < /head>) :
+		</ul>	
+			<table border="2px" width="86%">
+				<tr>
+					<th>HTML</th>
+				</tr>
+				<tr>
+					<td align="center">
+					< link href="styles/style.css" rel="stylesheet" type="text/css" />
+				    </td>
+				</tr>
+			</table>
+		<ul>2.Ajoutez les lignes suivantes à leur place, en remplaçant la ligne avec modèle avec la ligne fournie par Google Fonts qui contient font-family (font-family représente la (ou les) police(s) qu'on veut utiliser pour le texte). Ce premier ensemble de règles définit une police de base et sa taille pour toute la page (< html> est l'élément parent de tous les éléments de la page, tous les éléments contenus dans la page hériteront donc de la même font-size et font-family) : 
+		</ul>	
+			<table border="2px" width="90%">
+				<tr>
+					<th>CSS</th>
+				</tr>
+				<tr>
+					<td align="center">
+					<p>html {</p>
+						<p>font-size: 10px; /* px signifie 'pixels': la taille de base pour la police est désormais 10 pixels de haut  */</p>
+                    <p>font-family: "Open Sans", sans-serif; /* cela devrait être le reste du résultat obtenu à partir de Google fonts */</p>
+}
+				    </td>
+				</tr>
+			</table>	
+			<ul>3.Ensuite, fixons les tailles des différents textes contenus dans le corps du HTML (< h1>, < li>, et < p>). Nous allons également centrer le texte du titre et donner une taille de ligne et un espacement de caractère entre les lettres pour que le contenu du corps (body) du document soit plus lisible  : 
+		</ul>	
+			<table border="2px" width="90%">
+				<tr>
+					<th>CSS</th>
+				</tr>
+				<tr>
+					<td align="center">
+					<p>h1 {</p>
+                       <p> font-size: 60px;</p>
+                       <p> text-align: center;</p>
+                    <p>}</p>
+
+                    <p>p,li {</p>
+                       <p> font-size: 16px;</p>
+                        <p>line-height: 2;</p>
+                        <p>letter-spacing: 1px;</p>
+                    <p>}</p>
+				    </td>
+				</tr>
+			</table>
+
+			
+	</fieldset></center>
+
+</body>
+<style>
+	body{
+		 background:linear-gradient(91deg,#4A235A,#1A5276);
+	}
+	legend{
+		text-align:  left;
+		font-size: 68px;
+		color: darkkhaki;
+		font-style: italic;
+
+	}
+	fieldset{
+		width: 85%;
+	    background: rgba(255,255, 255, .12);
+	    border-radius: 60px;
+	    backdrop-filter:blur(10px);
+	    -webkit-backrop-filter: blur(10px);
+	    -moz-backrop-filter: blur(18px);
+	    box-shadow: 28px 20px 40px -6px rgba(0, 0, 0, .2);
+	    border: 3px black ;
+	}
+	h1{
+		text-align: center;
+		font-weight: bold;
+		font-style: italic;
+		letter-spacing: 3px;
+		font-size: 57px;
+		color:white;
+		color: rgba(255,255, 255, .1);
+	    border-radius: 60px;
+	    backdrop-filter:blur(10px);
+	    -webkit-backrop-filter: blur(10px);
+	    -moz-backrop-filter: blur(18px);
+	    text-shadow: 5px 5px  26px ;
+	     animation-name: examples;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+	}
+	@keyframes examples {
+        from {color: rgba(255,255, 255, .1);  }
+        to {color: rgba(255,255, 255);  }
+    }
+    img{
+		margin-left: 43%;
+	}
+	ul{
+		color: black;
+		font-weight: bold;
+	    font-size: 47px;
+	    text-align: left;
+	}
+	li{
+		color: white;
+	    font-size: 30px;
+	    text-align: left;
+	}
+	th{
+		color: darkkhaki;
+		font-size: 36px;
+	}
+	td{
+		color: white;
+		font-size: 36px;
+		letter-spacing: 3px ;
+		text-align: left;
+
+	}
+	table{
+		border-radius: 10px;
+		border-color: darkkhaki;
+	}
+</style>
+</html>
