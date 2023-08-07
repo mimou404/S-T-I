@@ -8,19 +8,19 @@
 	<h1>Developpement Web </h1>
 	
 	
-	<center><fieldset>
-		<legend>Front-end</legend><br><br><br><br>
-		<img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-image-logo-html-7.png" width="32.4%" id="im1"><h4> HTML 5</h4><a href="HTML.html"><input type="button" name="" value="Plus info..." ></a>
-		<br><br><img src="https://seeklogo.com/images/C/css3-logo-647BAA43FE-seeklogo.com.png" width="14%" id="im2"><h4> CSS 3</h4><a href="CSS.html"><input type="button" name="" value="Plus info..." ></a>
-		<br><br><img src="https://www.freepnglogos.com/uploads/javascript-png/png-javascript-badge-picture-8.png" width="17.3%" id="im3"><h4> JavaScript</h4><a href="JS.html"><input type="button" name="" value="Plus info..."></a>
-		<br><br><img src="https://user-images.githubusercontent.com/2327532/39481401-fa7d2992-4d30-11e8-886d-c4a3ee88147f.png" width="17%" id="im4"><h4> Bootstrap</h4><a href="BS.html"><input type="button" name="" value="Plus info..."></a><br><br><br>
-	</fieldset></center><br><br><br><br><br>
-	<center><fieldset>
-		<legend>Back-end</legend><br><br><br><br>
-		<img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" width="18%" id="im5"><h4> Node JS</h4><a href="NJ.html"><input type="button" name="" value="Plus info..." ></a>
-        <br><br><img src="https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Logo.jpg" width="17%" id="im6"><h4> MongoDB</h4><a href="MD.html"><input type="button" name="" value="Plus info..." ></a><br><br>
-        <img src="https://www.w3jar.com/wp-content/uploads/2019/05/express-js-tutorial.png" width="27%" id="im7"><h4> Express JS</h4><a href="EJ.html"><input type="button" name="" value="Plus info..." ></a><br><br>
-        <img src="https://img.generation-nt.com/easyphp-logo_029801BB01222191.png" width="18%" id="im8"><h4> Easy PHP</h4><a href="EP.html"><input type="button" name="" value="Plus info..." ></a><br><br><br>
+	<center><fieldset id="f1">
+		<legend>Front-end</legend>
+		<h4 id="l1"><img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-image-logo-html-7.png" width="10.4%" id="img1"> HTML 5<a href="HTML.html"><input type="button" name="" value="Plus info..." id="b1" ></a></h4>
+		<h4 id="l2"><img src="https://seeklogo.com/images/C/css3-logo-647BAA43FE-seeklogo.com.png" width="11%" id="img2">&nbsp;&nbsp;&nbsp;&nbsp; CSS 3<a href="CSS.html"><input type="button" name="" value="Plus info..." id="b2" ></a></h4>
+		<h4 id="l3"><img src="https://www.freepnglogos.com/uploads/javascript-png/png-javascript-badge-picture-8.png" width="5.3%" id="img3">&nbsp;&nbsp;&nbsp; JavaScript<a href="JS.html"><input type="button" name="" value="Plus info..." id="b3"></a></h4>
+		<h4 id="l4"><img src="https://user-images.githubusercontent.com/2327532/39481401-fa7d2992-4d30-11e8-886d-c4a3ee88147f.png" width="15%" id="img4"> &nbsp;&nbsp;Bootstrap<a href="BS.html"><input type="button" name="" value="Plus info..." id="b4"></a></h4>
+	</fieldset></center>
+	<center><fieldset id="f2">
+		<legend>Back-end</legend>
+		<img src=""><h4> Node JS<a href="NJ.html"><input type="button" name="" value="Plus info..."  id="b5"></a></h4>
+        <img src=""><h4 id=""> MongoDB<a href="MD.html"><input type="button" name="" value="Plus info..."  id="b6"></a></h4>
+        <img src="" ><h4> Express JS<a href="EJ.html"><input type="button" name="" value="Plus info..." id="b7" ></a></h4>
+        <img src="" ><h4 id=""> Easy PHP<a href="EP.html"><input type="button" name="" value="Plus info..." id="b8" ></a></h4>
 	</fieldset></center>
 
 </body>
@@ -33,11 +33,6 @@
 	h2{
 		font-size: 44px;
 		color: white;
-
-	}
-	img{
-		align-items: center;
-		margin-top: 3%;
 	}
 	legend{
 		color: white;
@@ -58,25 +53,13 @@
 	}
 	
 	h4{
-		color: white;
-		font-style: normal;
-		font-size: 43px;
-		letter-spacing: 2px;
-		align-items: center;
-		margin-top: 5%;
-		text-shadow: 5px 5px  26px ;
-		color: rgba(255,255, 255, .1);
-	    border-radius: 60px;
-	    text-shadow: 5px 5px  26px ;
-	     animation-name: example;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
+		text-align: left;
+		margin-left: 12%;
+		font-size: 31px;
+		margin-top: -4.6%;
+
 	}
-	@keyframes example {
-        from {color: rgba(255,255, 255, .1);  }
-        to {color: rgba(255,255, 255);  }
-    }
+	
 	
 		
 	
@@ -98,33 +81,60 @@
         animation-iteration-count: infinite;
         animation-direction: alternate;
 	}
-	@keyframes examples {
-        from {color: rgba(255,255, 255, .1);  }
-        to {color: rgba(255,255, 255);  }
-    }
-	#ss{
-		margin-left: 43%;
-	}
+	
+	
 	input[type="button"]{
-		width: 50%;
-		height: 3rem;
-		border-radius: 30px;
-		margin-top: -1%;
-		margin-bottom: 8%;
-		background: rgba(255,255, 255, .11);
-	    border-radius: 60px;
-	    backdrop-filter:blur(10px);
-	    -webkit-backrop-filter: blur(10px);
-	    -moz-backrop-filter: blur(18px);
-	    border-color: #4A235A;
+		margin-left: 10%;
 	}
 	input[value]{
-		color: white;
-		font-size: 34px;
-		font-style: italic;
-		letter-spacing: 3px;
-		text-shadow: 15px 15px 13px;
+		
 	}
+	
+	#f1{
+		margin-top: 7%;
+	}
+	#f2{
+		margin-top: 7%;
+	}
+	#l1{
+		margin-left: 4%;
+		margin-top: -3%;
+	}
+	#l2{
+		margin-left: 57%;
+		margin-top: -10.8%;
+	}
+	#l3{
+		margin-left: 4%;
+		margin-top: 1.5%;
+	}
+	#l4{
+		margin-left: 57%;
+		margin-top: -10%;
+	}
+	#b1{
+		margin-left: 9.7%;
+		margin-top:-5%;
+	}
+	#b2{
+		margin-left: 27%;
+		margin-top:-5%;
+	}
+	#b3{
+		margin-left: 7%;
+		margin-top:-5%;
+	}
+	#b4{
+		margin-left: 15.3%;
+		margin-top:-5%;
+
+	}
+	#img1{
+		margin-left: -2.8%;
+		margin-top: 3%;
+	}
+
+	
 	
 
 	
